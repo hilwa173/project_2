@@ -1,7 +1,10 @@
-<h3>Setup and mobile version skeleton</h3>
+<h3>Project Title</h3>
 
-This repository contains the code for setting up the mobile version of my portfolio website.
-
+Setup and mobile version skeleton
+<h3>Table of Content</h3>
+-Description<br>
+-Features<br>
+-Languages
  <h3>Description</h3>
  
 I'm a computer science student, and I've built this website to show off what I've been learning and working on. 
