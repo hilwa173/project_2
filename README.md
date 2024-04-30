@@ -1,6 +1,6 @@
 <h3>Setup and mobile version skeleton</h3>
 
-This repository contains the code for my personal portfolio website.
+This repository contains the code for setting up the mobile version of my portfolio website.
 
  <h3>Description</h3>
  
