@@ -17,4 +17,4 @@ while CSS makes it look cool and work well on different devices, like phones and
  <h3>Language used</h3>
 
 - HTML
-- CSS3
+- CSS
