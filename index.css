@@ -1,18 +1,14 @@
-
 @media screen and (min-width: 375px) {
   .id1 {
     gap: 40%;
     position: absolute;
-
     /* left: 5%;
   right: 15%;
   top: 10%;
   height: 4%; */
     display: flex;
-
     /* align-items: center; */
     border: 1px solid #dfe1e6;
-
     /* border-radius: 16px; */
     padding: 16px;
     width: 327px;
@@ -36,7 +32,6 @@
   body {
     width: 80%;
     height: 100vh;
-
     /* margin: 0 auto; */
     margin-top: 10%;
     margin-bottom: 20%;
@@ -114,12 +109,10 @@
       }
 
     } */
-
   .allSection {
     display: flex;
     flex-direction: column;
   }
-
   .tonic {
     list-style: none;
     padding: 0;
@@ -199,9 +192,6 @@
     font-size: 150%;
     line-height: 120%;
     color: #000;
-  }
-  .allSection{
-    
   }
 
   .acts {
