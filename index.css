@@ -2,29 +2,15 @@
   .id1 {
     gap: 40%;
     position: absolute;
-
-    /* left: 5%;
-  right: 15%;
-  top: 10%;
-  height: 4%; */
     display: flex;
 
-    /* align-items: center; */
-    border: 1px solid #dfe1e6;
-
-    /* border-radius: 16px; */
+    /* border: 1px solid #dfe1e6; */
     padding: 16px;
     width: 327px;
     height: 596px;
     text-decoration: none;
   }
 
-  /* #id {
-  display: flex;
-  margin-left: 0%;
-  flex-direction: right;
-}
-*/
   .links {
     display: flex;
     list-style-type: none;
@@ -32,11 +18,14 @@
     font-weight: bold;
   }
 
+  .id2 {
+    visibility: hidden;
+    margin-right: 15px;
+  }
+
   body {
     width: 80%;
     height: 100vh;
-
-    /* margin: 0 auto; */
     margin-top: 10%;
     margin-bottom: 20%;
     margin-left: 5%;
@@ -45,19 +34,32 @@
   }
 
   .flex-container {
-    /* width: 80%;
-  height: 100vh; */
     display: flex;
     flex-direction: column;
-    align-items: start;
-    margin: 0% 10% 10% 0%;
     background-image: url(s.svg);
     background-repeat: no-repeat;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     padding: 16px;
-    width: 327px;
-    height: 596px;
+    width: 375px;
+    height: 665px;
+  }
+
+  .acts {
+    border: 1px solid #e9ebf0;
+    border-radius: 16px;
+
+    /* padding: 16px; */
+    width: 375px;
+    height: 665px;
+    background: #fff;
+  }
+
+  .image img {
+    max-width: 90%;
+    height: 10%;
+    align-items: center;
+    padding: 5%;
   }
 
   .headline-container {
@@ -86,10 +88,6 @@
 
   .space {
     padding: 10%;
-  }
-
-  .id2 {
-    margin-right: 15px;
   }
 
   a {
@@ -133,8 +131,9 @@
 
   .language {
     list-style: none;
-    padding: 0;
-    margin: 0;
+
+    /* padding: 0;
+    margin: 0; */
     display: flex;
     flex-direction: row;
   }
@@ -175,8 +174,6 @@
 
   .top {
     display: flex;
-
-    /* padding-left: 0%; */
     flex-direction: row;
     justify-content: space-between;
   }
@@ -199,22 +196,73 @@
     color: #000;
   }
 
-  .acts {
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    padding: 16px;
-    width: 327px;
-    height: 596px;
-    background: #fff;
-  }
-
   .about {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     padding: 16px;
-    width: 327px;
-    height: 750px;
+    width: 375px;
+    height: 800px;
     background: #fff;
+  }
+
+  .contact {
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    padding: 16px;
+    width: 375px;
+    height: 665px;
+    background: #fff;
+    background-image: url("photos.jpg");
+    background-repeat: no-repeat;
+
+    /* background-color: #6070ff; */
+  }
+
+  #me {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+  }
+
+  #me2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #ebebff;
+  }
+
+  .fname {
+    width: 327px;
+    height: 48px;
+  }
+
+  .email1 {
+    width: 327px;
+    height: 48px;
+  }
+
+  .area {
+    width: 327px;
+    height: 100px;
+  }
+
+  .submit {
+    border-width: thin;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 3%;
+    margin-right: 50%;
+    padding: 4%;
+    color: #6070ff;
+    border-radius: 8px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
   }
 
   .lets {
@@ -230,5 +278,67 @@
   ul.links li a:hover {
     background-color: rgb(44, 20, 219);
     color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .acts {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    padding: 9%;
+  }
+
+  .flex-container {
+    width: 100%;
+    padding: 9%;
+    height: 665px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    height: 665px;
+    width: 100%;
+    padding: 9%;
+  }
+
+  .contact {
+    display: flex;
+    width: 100%;
+    height: 665px;
+    padding: 9%;
+  }
+
+  .menu-toggle {
+    visibility: hidden;
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* .left{
+  width: 50%;
+}   */
+  .id1 {
+    gap: 100%;
+    position: absolute;
+    display: flex;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  .links {
+    display: flex;
+    list-style-type: none;
+    color: #070707;
+    font-weight: bold;
+  }
+
+  .id2 {
+    visibility: visible;
   }
 }
