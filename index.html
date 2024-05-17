@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="index.css">
     <title>Website Setup</title>
-
+<script src="JS/index.js" defer></script>
 </head>
     <section>
     <header>
 <nav>
     <div class="id1">
         <div href="#">My Logo </a></div>
-        <div class="menu-toggle">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M11 15C11 14.4477 11.4477 14 12 14H28C28.5523 14 29 14.4477 29 15C29 15.5523 28.5523 16 28 16H12C11.4477 16 11 15.5523 11 15ZM11 20C11 19.4477 11.4477 19 12 19L28 19C28.5523 19 29 19.4477 29 20C29 20.5523 28.5523 21 28 21L12 21C11.4477 21 11 20.5523 11 20ZM12 24C11.4477 24 11 24.4477 11 25C11 25.5523 11.4477 26 12 26H28C28.5523 26 29 25.5523 29 25C29 24.4477 28.5523 24 28 24H12Z"
-                    fill="#6070FF" />
-            </svg>
-        </div>
+        <div class="mob" onclick=showNews()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></div>
          <div>
-            <ul class="links">
-                <li class="id2"><a href="#">Portfolio </a></li>
-                <li class="id2"> <a href="#"> About </a></li>
-                <li class="id2"> <a href="#"> Contact </a></li>
+         
+
+
+                <ul class="links">
+                    <li class="id2"><a href="#">Portfolio </a></li>
+                    <li class="id2"> <a href="#about"> About </a></li>
+                    <li class="id2"> <a href="#contact"> Contact </a></li>
+                   
+                </ul>
+            <ul class="news">
+                <li onclick="hideNews()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></a></li>
+                <li class="mobile-menu"><a href="#">Portfolio </a></li>
+                <li class="mobile-menu"> <a href="#"> About </a></li>
+                <li class="mobile-menu"> <a href="#"> Contact </a></li>
+                
             </ul>
         </div> 
-
-
     </div>
 </nav>
+
     </header>
 </section> 
 <body>
+    
     <section class="allSection">
     <section class="flex-container">
         <div class="headline-container">
@@ -266,7 +276,6 @@
               <ul class="listAbout">
           <div class="top">
             <li class="forLang ">Language</li>
-            
            <img src="dnk.jpg" alt="alter">
 </div>
             <ul class="tryAbout"> 
@@ -326,27 +335,27 @@
 <div class="space">
 
 </div>
-   <section class="contact">
+   <div class="contact">
     <div>
     <div id="me">Contact me</div>
   <div >
     <p id="me2">
-        If you have an application you are interested in developing, a feature that you need built or
-         a project that needs coding.I’d love to help with it!
+        If you have an application you are interested in <br> developing, a feature that you need built or
+         a project <br> that needs coding.I’d love to help with it!
     </p>
   </div>
   <div class="flex">
  <form action="https://formspree.io/f/xvoeykdl" method="post">  
-<input type="text" name="fullName" class="fname" placeholder="Enter your name (up to 30 characters)" maxlength="30" required><br> <br>
-<input type="email" name="email" class="email1" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+<input type="text" name="fullName" class="input" placeholder="Enter your name (up to 30 characters)" maxlength="30" required><br> <br>
+<input type="email" name="email" class="input" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
     required title="Please enter a valid email address">
 <br> <br>
-<textarea class="area" name="message" placeholder="Write your message here" maxlength="500" required></textarea>
-<input type="submit" class="submit"  value="Get in touch">
+<textarea class="area" name="message" placeholder="Write your message here" maxlength="500" required></textarea><br>
+<input type="submit" class="get"  value="Get in touch">
 </form>
 </div>
 </div>
-</section>
+</div>
 
         </section>
         </body>
