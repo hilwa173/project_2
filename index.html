@@ -11,7 +11,7 @@
     <section>
     <header>
 <nav>
-    <div class="id1">
+    <div class="id1" id="id1">
         <div href="#">My Logo </a></div>
         <div class="mob" onclick=showNews()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
                 width="24px" fill="#5f6368">
@@ -19,10 +19,8 @@
             </svg></div>
          <div>
          
-
-
                 <ul class="links">
-                    <li class="id2"><a href="#">Portfolio </a></li>
+                    <li class="id2"><a href="#id1">Portfolio </a></li>
                     <li class="id2"> <a href="#about"> About </a></li>
                     <li class="id2"> <a href="#contact"> Contact </a></li>
                    
@@ -31,9 +29,9 @@
                 <li onclick="hideNews()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                 </svg></a></li>
-                <li class="mobile-menu"><a href="#">Portfolio </a></li>
-                <li class="mobile-menu"> <a href="#"> About </a></li>
-                <li class="mobile-menu"> <a href="#"> Contact </a></li>
+                <li class="mobile-menu" onclick="hideNews()" ><a href="#id1">Portfolio </a></li>
+                <li class="mobile-menu" onclick="hideNews()"> <a href="#about"> About </a></li>
+                <li class="mobile-menu" onclick="hideNews()"> <a href="#contact"> Contact </a></li>
                 
             </ul>
         </div> 
@@ -225,7 +223,7 @@
                  <div class="space">
                 
                 </div>
-                <section class="about">
+                <section class="about" id="about">
                     <div>
                 <h1 class="headAbout">About Myself</h1>
                 <div class="headline-containe-para">
@@ -335,7 +333,7 @@
 <div class="space">
 
 </div>
-   <div class="contact">
+   <div class="contact" id="contact">
     <div>
     <div id="me">Contact me</div>
   <div >

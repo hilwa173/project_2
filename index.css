@@ -20,7 +20,7 @@
     background-color: rgba(96, 112, 255, 0.8);
     backdrop-filter: blur(3px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
+    display: none;
     flex-direction: column;
   }
 
@@ -54,9 +54,6 @@
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     padding: 16px;
-
-    /* width: 375px;
-    height: 665px; */
   }
 
   .acts {
@@ -102,7 +99,7 @@
   }
 
   .space {
-    padding: 10%;
+    padding: 7%;
   }
 
   a {
