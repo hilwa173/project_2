@@ -48,9 +48,9 @@ news.style.display = 'none';
                 <li onclick="hideNews()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                 </svg></a></li>
-                <li class="mobile-menu"  ><a href="#id1">Portfolio </a></li>
-                <li class="mobile-menu" > <a href="#about"> About </a></li>
-                <li class="mobile-menu" > <a href="#contact"> Contact </a></li>
+                <li class="mobile-menu" onclick="hideNews()" ><a href="#id1">Portfolio </a></li>
+                <li class="mobile-menu" onclick="hideNews()" > <a href="#about"> About </a></li>
+                <li class="mobile-menu" onclick="hideNews()"> <a href="#contact"> Contact </a></li>
                 
             </ul>
         </div> 
@@ -142,7 +142,7 @@ news.style.display = 'none';
             </ul>
         
         <button onclick="togglePopup()" class="seePro">See project</button>
-        <div id="pop" style="display: none;">
+        <div id="pop">
             <div class="close" onclick="closePopup()">&times;</div>
             <div class="bold">
                 <h1>Tonic</h1>
@@ -382,10 +382,7 @@ news.style.display = 'none';
             </div>
                 </section>
 <div class="space">
-
 </div>
-
-
    <div class="contact" id="contact">
     <div>
     <div id="me">Contact me</div>
@@ -424,9 +421,7 @@ news.style.display = 'none';
             errorMessage.textContent = 'Please enter your email in lowercase.';
         }
     });
-</script>
-
- 
+</script> 
 <!-- <div class="contact" id="contact">
     <div>
         <div id="me">Contact me</div>
@@ -451,8 +446,6 @@ news.style.display = 'none';
         </div>
     </div>
 </div> -->
-
-
         </section>
         </body>
         </html>
