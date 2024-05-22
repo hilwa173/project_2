@@ -55,9 +55,11 @@
     border-radius: 16px;
     padding: 16px;
   }
-#pop{
-  display: none;
-}
+
+  #pop {
+    display: none;
+  }
+
   .acts {
     border: 1px solid #e9ebf0;
     border-radius: 16px;
@@ -277,10 +279,11 @@
     background-color: rgb(44, 20, 219);
     color: white;
   }
-     .error-message {
-       color: rgb(255, 255, 225);
-       margin-bottom: 10px;
-     }
+
+  .error-message {
+    color: rgb(255, 255, 225);
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -373,8 +376,9 @@
     text-align: center;
     color: #ebebff;
   }
- .error-message {
-   color: rgb(255, 255, 225);
-   margin-bottom: 10px;
- }
+
+  .error-message {
+    color: rgb(255, 255, 225);
+    margin-bottom: 10px;
+  }
 }
