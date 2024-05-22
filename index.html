@@ -16,6 +16,16 @@ const news = document.querySelector('.news');
 news.style.display = 'none';
 }
 </script>
+<script>
+    function popup() {
+        var popup = document.getElementById("pop");
+        popup.style.display = "block";
+    }
+    function closePopup() {
+        var popup = document.getElementById("pop");
+        popup.style.display = "none";
+    }
+</script>
 </head>
     <section>
     <header>
@@ -38,9 +48,9 @@ news.style.display = 'none';
                 <li onclick="hideNews()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                 </svg></a></li>
-                <li class="mobile-menu" onclick="hideNews()" ><a href="#id1">Portfolio </a></li>
-                <li class="mobile-menu" onclick="hideNews()"> <a href="#about"> About </a></li>
-                <li class="mobile-menu" onclick="hideNews()"> <a href="#contact"> Contact </a></li>
+                <li class="mobile-menu"  ><a href="#id1">Portfolio </a></li>
+                <li class="mobile-menu" > <a href="#about"> About </a></li>
+                <li class="mobile-menu" > <a href="#contact"> Contact </a></li>
                 
             </ul>
         </div> 
@@ -105,6 +115,7 @@ news.style.display = 'none';
         
         </div>
         <section class="acts">
+          
             <div class="image">
                 <img  src="images.jpg" alt=" screenshot">
             </div>
@@ -130,8 +141,39 @@ news.style.display = 'none';
                 <li><a href="">JavaScript</a></li>
             </ul>
         
-            <button class="seePro">See project</button></div>
-        </section>
+        <button onclick="togglePopup()" class="seePro">See project</button>
+        <div id="pop" style="display: none;">
+            <div class="close" onclick="closePopup()">&times;</div>
+            <div class="bold">
+                <h1>Tonic</h1>
+            </div>
+            <h5>
+                <ul class="tonic">
+                    <li>CANOPY</li>
+                    <li>Back End Dev</li>
+                    <li>2015</li>
+                </ul>
+            </h5>
+<div class="imag">
+    <img src="images.jpg" alt=" screenshot">
+</div>
+
+        </div>
+        
+        <script>
+            function togglePopup() {
+                var popup = document.getElementById("pop");
+                if (popup.style.display === "none") {
+                    popup.style.display = "block";
+                } else {
+                    popup.style.display = "none";
+                }
+            }
+        </script>
+         </section>
+        
+            <!-- <button onclick="popup()" class="seePro">See project</button></div> -->
+       
         <div class="space">
         
         </div>
@@ -342,6 +384,8 @@ news.style.display = 'none';
 <div class="space">
 
 </div>
+
+
    <div class="contact" id="contact">
     <div>
     <div id="me">Contact me</div>
@@ -351,18 +395,63 @@ news.style.display = 'none';
          a project <br> that needs coding.I’d love to help with it!
     </p>
   </div>
-  <div class="flex">
- <form action="https://formspree.io/f/xvoeykdl" method="post">  
-<input type="text" name="fullName" class="input" placeholder="Enter your name (up to 30 characters)" maxlength="30" required><br> <br>
-<input type="email" name="email" class="input" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-    required title="Please enter a valid email address">
-<br> <br>
-<textarea class="area" name="message" placeholder="Write your message here" maxlength="500" required></textarea><br>
-<input type="submit" class="get"  value="Get in touch">
-</form>
+<div class="flex">
+    <form id="contacts" action="https://formspree.io/f/xvoeykdl" method="post">
+        <input type="text" name="fullName" class="input" placeholder="Enter your name (up to 30 characters)"
+            maxlength="30" required /><br /><br />
+        <input type="email" id="email" name="email" class="input" placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+            title="Please enter a valid email address" /><br /><br />
+        <textarea class="area" name="message" placeholder="Write your message here" maxlength="500"
+            required></textarea><br />
+        <div id="error-message" class="error-message"></div>
+        <input type="submit" class="get" value="Get in touch" />
+    </form>
 </div>
 </div>
 </div>
+
+<script>
+    const form = document.getElementById('contacts');
+    const emailInput = document.getElementById('email');
+    const errorMessage = document.getElementById('error-message');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = emailInput.value;
+        if (email === email.toLowerCase()) {
+            form.submit();
+        } else {
+            errorMessage.textContent = 'Please enter your email in lowercase.';
+        }
+    });
+</script>
+
+ 
+<!-- <div class="contact" id="contact">
+    <div>
+        <div id="me">Contact me</div>
+        <div>
+            <p id="me2">
+                If you have an application you are interested in <br> developing, a feature that you need built or
+                a project <br> that needs coding.I’d love to help with it!
+            </p>
+        </div>
+        <div class="flex">
+            <form action="https://formspree.io/f/xvoeykdl" method="post">
+                <input type="text" name="fullName" class="input" placeholder="Enter your name (up to 30 characters)"
+                    maxlength="30" required><br> <br>
+                <input type="email" name="email" class="input" placeholder="Enter your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+                    title="Please enter a valid email address">
+                <br> <br>
+                <textarea class="area" name="message" placeholder="Write your message here" maxlength="500"
+                    required></textarea><br>
+                <input type="submit" class="get" value="Get in touch">
+            </form>
+        </div>
+    </div>
+</div> -->
+
 
         </section>
         </body>
