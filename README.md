@@ -21,3 +21,5 @@ while CSS makes it look cool and work well on different devices, like phones and
 
 - HTML
 - CSS
+<h3>Deploymet</h3>
+- https://hilwa173.github.io/project_2/
